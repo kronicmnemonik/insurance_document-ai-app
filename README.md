@@ -17,6 +17,13 @@ TypeScript, FastAPI, and Python.
 - Python 3
 - Node.js and npm
 - Git (for version control)
+- fastapi
+- uvicorn[standard]
+- python-multipart
+- pytesseract
+- Pillow
+- pymupdf
+- ollama
 
 ## Run locally
 
@@ -46,19 +53,18 @@ npm run dev
 
 Frontend: http://localhost:5173
 
-## Current limitations
+## Current features
 
-Extraction is mocked; uploaded document contents are not analyzed.
+Extraction utilizes AI and OCR; uploaded document contents are analyzed and parsed into fields.
 Jobs are stored in memory and disappear when the backend restarts.
 This prototype is not suitable for real insurance claims.
 
 ## Planned improvements
 
-1. OCR and AI-based extraction
-2. Pydantic validation and confidence scores
-3. Background jobs, retries, and failure handling
-4. PostgreSQL persistence
-5. Automated tests
-6. Docker
-7. AWS infrastructure using Terraform
-8. GitHub Actions CI/CD
+1. Pydantic validation and confidence scores
+2. Background jobs, retries, and failure handling
+3. PostgreSQL persistence
+4. Automated tests
+5. Docker
+6. AWS infrastructure using Terraform
+7. GitHub Actions CI/CD
