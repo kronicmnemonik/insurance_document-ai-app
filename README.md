@@ -8,9 +8,10 @@ TypeScript, FastAPI, and Python.
 
 - Upload PDF, PNG, and JPEG files
 - FastAPI backend
-- Mock structured extraction results
+- Structured extraction results
 - Human-review indicators
 - React and TypeScript frontend
+- Extraction utilizes AI and OCR; uploaded document contents are analyzed and parsed into fields.
 
 ## Requirements
 
@@ -53,9 +54,8 @@ npm run dev
 
 Frontend: http://localhost:5173
 
-## Current features
+## Current limitations
 
-Extraction utilizes AI and OCR; uploaded document contents are analyzed and parsed into fields.
 Jobs are stored in memory and disappear when the backend restarts.
 This prototype is not suitable for real insurance claims.
 
